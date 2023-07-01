@@ -11,7 +11,7 @@ import { MessageService } from '../message.service';
   styleUrls: ['./heroes.component.css']
 })
 export class HeroesComponent {
-  selectedHero?: Hero;
+  // selectedHero?: Hero;  // this is not used
   
   heroes: Hero[] = [];
   
@@ -32,8 +32,8 @@ export class HeroesComponent {
     this.getHeroes();
   }
   
-  onSelect(hero: Hero): void {
-    this.selectedHero = hero;
-    this.messageService.add(`HeroesComponent: Selected hero id=${hero.id}`);  }
+  // onSelect(hero: Hero): void {
+  //   this.selectedHero = hero;
+  //   this.messageService.add(`HeroesComponent: Selected hero id=${hero.id}`);  } this is not used
   }
   
