@@ -31,4 +31,5 @@ export class HeroDetailComponent {
   goBack(): void {
     this.location.back();
   }
+  
 }
